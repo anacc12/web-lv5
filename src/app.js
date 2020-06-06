@@ -229,12 +229,12 @@ class catFight {
   }
 
   _updateCatInfo(winner, loser) {
-    let half = cats.length / 2;
+    let half = parseInt(cats.length / 2);
     let hm1 = half - 1;
     let id1 = winner.id - 1;
-    let id2 = parseInt(winner.id) + hm1;
+    let id2 = parseInt(winner.id) + parseInt(hm1);
     let id3 = loser.id - 1;
-    let id4 = parseInt(loser.id) + hm1;
+    let id4 = parseInt(loser.id) + parseInt(hm1);
 
     console.log("winner id " + winner.id );
     console.log("loser id: " + loser.id);
