@@ -97,8 +97,8 @@ class catFight {
 
   _toggleFight() {
     if (
-      BoxInfo.first.nameInfo.innerText == "Cat Name" ||
-      BoxInfo.second.nameInfo.innerText == "Cat Name"
+        BoxInfo.first.nameInfo.innerText == "Cat Name" ||
+        BoxInfo.second.nameInfo.innerText == "Cat Name"
     ) {
       fightButton.disabled = true;
     } else if (BoxInfo.first.id == BoxInfo.second.id) {
@@ -335,23 +335,23 @@ const addnewBtn = document.querySelector("form input");
 const editBtn = document.querySelector("#editCat");
 let message = document.querySelector(".container .message");
 let side,
-  img,
-  id,
-  name,
-  age,
-  catInfo,
-  record,
-  wins,
-  loss,
-  total,
-  percentage,
-  firstFighter,
-  secondFighter,
-  infoCat,
-  winner,
-  loser,
-  winnerObj,
-  loserObj;
+    img,
+    id,
+    name,
+    age,
+    catInfo,
+    record,
+    wins,
+    loss,
+    total,
+    percentage,
+    firstFighter,
+    secondFighter,
+    infoCat,
+    winner,
+    loser,
+    winnerObj,
+    loserObj;
 
 const BoxInfo = {
   first: {
@@ -362,7 +362,7 @@ const BoxInfo = {
     winsInfo: firstSide.querySelector(".cat-info .record .wins"),
     lossInfo: firstSide.querySelector(".cat-info .record .loss"),
     image: firstSide.querySelector(
-      ".featured-cat-fighter .featured-cat-fighter-image"
+        ".featured-cat-fighter .featured-cat-fighter-image"
     ),
   },
   second: {
@@ -373,7 +373,7 @@ const BoxInfo = {
     winsInfo: secondSide.querySelector(".cat-info .record .wins"),
     lossInfo: secondSide.querySelector(".cat-info .record .loss"),
     image: secondSide.querySelector(
-      ".featured-cat-fighter .featured-cat-fighter-image"
+        ".featured-cat-fighter .featured-cat-fighter-image"
     ),
   },
 };
