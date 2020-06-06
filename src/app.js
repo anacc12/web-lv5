@@ -229,7 +229,6 @@ class catFight {
   }
 
   _updateCatInfo(winner, loser) {
-    console.log(winner.id);
     let half = cats.length / 2;
     let hm1 = half - 1;
     let id1 = winner.id - 1;
