@@ -10,7 +10,7 @@ class Database
     public function __construct()
     {
         //ostvarivanje konekcije s podacima iz config.php
-        $this->conn = mysqli_connect(Config::$host, Config::$user, Config::$pass, Config::$db, Config::$port);
+        $this->conn = mysqli_connect(Config::$host, Config::$user, Config::$pass, Config::$db);
         if (!$this->conn) {
             echo "Connection error";
         }
