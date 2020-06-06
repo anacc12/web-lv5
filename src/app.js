@@ -236,6 +236,9 @@ class catFight {
     let id3 = loser.id - 1;
     let id4 = parseInt(loser.id) + hm1;
 
+    console.log("winner id " + winner.id );
+    console.log("loser id: " + loser.id);
+
     Array.from(cats).forEach((item, index) => {
       side = winner.side;
       if (index == id1) {
